@@ -1,0 +1,116 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #3b82f6;
+  --background: #f9fafb;
+  --section-bg: #ffffff;
+  --navbar-bg: #1e3a8a;
+  --navbar-text: #ffffff;
+  --heading: #111827;
+  --text: #374151;
+  --footer-bg: #111827;
+  --footer-text: #e5e7eb;
+  --border: #d1d5db;
+  --accent: #facc15;
+}
+body {
+  background-color: var(--background);
+}
+header {
+  width: 100vw;
+  height: 7rem;
+  background-color: var(--navbar-bg);
+}
+nav {
+  width: 96%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo img {
+  width: 8rem;
+  cursor: pointer;
+}
+nav .logo a {
+  font-size: 2rem;
+  color: var(--navbar-text);
+  transition: color 0.4s ease-in-out;
+  span {
+    color: #facc15;
+    font-weight: bold;
+  }
+}
+nav .logo a:hover {
+  color: var(--accent);
+}
+nav .logo a:hover span {
+  color: var(--navbar-text);
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav .menu .submenu {
+  position: relative;
+}
+nav .menu li a {
+  color: var(--navbar-text);
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: color 0.4s ease-in-out;
+}
+nav .menu li a:hover {
+  color: var(--accent);
+}
+nav .menu .submenu-item {
+  position: absolute;
+  top: 5.2rem;
+  left: 0;
+  background-color: var(--secondary);
+  width: 25rem;
+  height: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+nav .menu .submenu-item li a:hover {
+  color: var(--accent);
+}
+nav .menu .submenu:hover .submenu-item {
+  transform: scaleY(1);
+}
+/* Mobile Menu  */
+nav .mobile-menu i {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+nav .mobile-menu i:hover {
+  color: var(--accent);
+}
+
+/* Media Quary */
+
+@media (max-width: 992px) {
+  nav .mobile-menu {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  nav .mobile-menu {
+    display: block;
+  }
+}
