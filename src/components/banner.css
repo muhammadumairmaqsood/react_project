@@ -1,0 +1,17 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #3b82f6;
+  --background: #f9fafb;
+  --section-bg: #ffffff;
+  --navbar-bg: #1e3a8a;
+  --navbar-text: #ffffff;
+  --heading: #111827;
+  --text: #374151;
+  --footer-bg: #111827;
+  --footer-text: #e5e7eb;
+  --border: #d1d5db;
+  --accent: #facc15;
+}
+.banner-section{
+    background-color: var(--section-bg);
+}

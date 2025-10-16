@@ -1,5 +1,6 @@
 import "./navbar.css";
 import logo from "../assets/logo.png";
+import Banner from "./Banner";
 const Header = () => {
   return (
     <header>
@@ -74,11 +75,38 @@ const Header = () => {
           </li>
         </ul>
         {/* Mobile Menu Start */}
-        <div className="mobile-menu">
-          <i className="bi bi-list"></i>
+        <div className="mobile">
+          <div className="hamburger">
+            <i className="bi bi-list"></i>
+          </div>
+          <ul className="mobile-menu">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Products</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a href="">Blogs</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
         </div>
         {/* Mobile Menu End */}
       </nav>
+      {/* Banner section Start */}
+      <section id="banner">
+        <Banner />
+      </section>
+      {/* Banner section End */}
     </header>
   );
 };
