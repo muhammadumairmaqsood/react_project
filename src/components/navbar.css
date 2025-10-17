@@ -55,6 +55,7 @@ nav .menu {
 }
 nav .menu .submenu {
   position: relative;
+  z-index: 2;
 }
 nav .menu li a {
   color: var(--navbar-text);
